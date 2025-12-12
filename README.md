@@ -1,8 +1,6 @@
-The Movie Recommender Bot is a Python-based application that suggests movies to users based on their preferred genre. This project demonstrates the integration of web scraping, data processing, and automation to build a functional recommendation system. The bot uses Scrapy to scrape real-time movie data from the web, processes and organizes the information with Pandas, and presents genre-specific recommendations directly to the user.
-
 # Movie Recommender (Scrapy + Pandas)
 
-A small CLI app that scrapes IMDb by genre, stores results to CSV, and serves top-rated movie suggestions for a user-provided genre. Includes a bundled sample dataset so it still works when scraping is blocked or offline.
+The Movie Recommender Bot is a Python-based application that suggests movies to users based on their preferred genre. This project demonstrates the integration of web scraping, data processing, and automation to build a functional recommendation system. The bot uses Scrapy to scrape real-time movie data from the web, processes and organizes the information with Pandas, and presents genre-specific recommendations directly to the user.
 
 ## Features
 - Scrapes IMDb search pages per genre using `requests` + `BeautifulSoup`.
