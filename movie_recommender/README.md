@@ -21,7 +21,11 @@ pip install -r requirements.txt
 ```
 
 ## Run
+```bash
+
 python main.py
+
+```
 
 - On first run it tries to scrape. If blocked, it automatically copies the bundled sample CSV and still returns suggestions.
 - If you want to force a fresh scrape later, delete `data/movies.csv` and run again.
