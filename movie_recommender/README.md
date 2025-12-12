@@ -21,9 +21,8 @@ pip install -r requirements.txt
 ```
 
 ## Run
-```bash
 python main.py
-```
+
 - On first run it tries to scrape. If blocked, it automatically copies the bundled sample CSV and still returns suggestions.
 - If you want to force a fresh scrape later, delete `data/movies.csv` and run again.
 
@@ -32,18 +31,9 @@ python main.py
 - Output is sorted by IMDb rating (desc) then year (desc).
 - If no matches are found for a genre, try a simpler or broader genre string.
 
-## Troubleshooting
-- **`command not found: python`**: Use `python3` instead.
-- **Scrape fails for all genres**: Network/IMDb may be blocking; app will fall back to sample data. Retry later, use a VPN, or delete `data/movies.csv` to re-attempt.
-- **CSV tokenizing error**: Delete `data/movies.csv` to regenerate or rely on the fixed `data/sample_movies.csv`.
-
 ## Project Structure
 - `main.py` – CLI entrypoint; ensures dataset, prompts genre, prints suggestions.
 - `scrape_movies.py` – Scraper logic and CSV writer; defines `ScrapeError`.
 - `suggestion.py` – Data loading, filtering, formatting; defines `SuggestionError`.
 - `data/sample_movies.csv` – Bundled fallback dataset.
 - `requirements.txt` – Dependencies.
-
-## Safety and Etiquette
-- Be gentle with scraping: modest `per_genre` counts and delays are built in.
-- IMDb may rate-limit; respect their terms of service.
